@@ -6,3 +6,7 @@ locals {
   }
   az_names = slice(data.aws_availability_zones.available.names, 0, 2)
 }
+
+output "vpc_id"{
+  value = aws_vpc.main.id
+}
