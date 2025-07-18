@@ -14,3 +14,13 @@ output "vpc_id"{
 output "public_subnet_ids" {
   value = aws_subnet.public[*].value
 }
+
+output "private_subnet_ids" {
+  value = aws_subnet.private[*].value
+}
+
+output "database_subnet_ids" {
+  value = aws_subnet.database[*].value
+}
+
+
